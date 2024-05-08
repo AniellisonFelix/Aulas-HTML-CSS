@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container {
+			background-color: lightcoral;
+			display: flex;
+			flex-flow: row wrap-reverse;
+		}
+
+		.item {
+			background-color: lightblue;
+			border: 1px solid black;
+			text-align: center;
+			flex: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item">Exemplo de bloco A</div>
+		<div class="item">Exemplo de bloco B</div>
+		<div class="item">Exemplo de bloco C</div>
+		<div class="item">Exemplo de bloco D</div>
+		<div class="item">Exemplo de bloco E</div>
+		<div class="item">Exemplo de bloco F</div>
+		<div class="item">Exemplo de bloco G</div>
+	</div>
+</body>
+</html>
+
+<!-- o justify-content:  vai fazer a o aliamento ao main-axis
+justify-content: flex-start vai ficar colado no main start 
+justify-content: space-between coloca primeiro item e o ultimo grudados de acordo com a tela se forem 3 item um no start ou no centro e outro no and  e o espaçamento vai ser distribuido por igual..
+
+space-evenly; faz comque os itens nao grudem no final da tela e faz com que o espaço entre eles inclusive o do start e do and sejam iguais antes do primeiro e depois do ultimo vai ter mesmo esspaço...
+
+space-around; -->

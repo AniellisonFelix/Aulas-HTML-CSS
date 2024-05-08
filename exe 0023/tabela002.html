@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tabelas</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+      width: 500px;
+      border-collapse: collapse;
+      position: relative;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 6px;
+    }
+    thead, tfoot {
+      background-color:gray;
+      color: white;
+      text-align: center;
+    }
+    thead > tr > th {
+      position: sticky;
+      top: -1px;
+      background-color:gray;
+    }
+    td.num {
+      text-align: right;
+    }
+    td.num2 {
+      text-align: right;
+    }
+    tbody > tr:nth-child(2n) {
+      background-color: lightgrey;
+      /*colocar (ODD)(2n-1) para numero impar
+      colocar (EVEN)(2n) para numeros pares*/
+    }
+    caption {
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+      background-color: lightgrey;
+    }
+  </style>
+</head>
+<body>
+  <h1>Uso de tabelas grandes</h1>
+  <!-- anatomia para tabelas grandes 
+    table
+      Thead
+        tr, td, th
+      Tbody
+        tr, td, th
+      Tfoot
+        tr, td, th
+        -->
+    <table>
+      <caption>População das Unidades Federativas</caption>
+      <thead>
+        <tr>
+          <th scope="col">Estado</th>
+          <th scope="col">Populaçao</th>
+          <th>% da populaçao</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="Bandeira_do_estado_de_São_Paulo.svg.webp" alt=""> Sao Paulo</td>
+          <td class="num">44 411 238</td>
+          <td class="num2" class="num2">21,88%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_de_Minas_Gerais.svg.webp" alt=""> Minas Gerais</td>
+          <td class="num">20 538 718</td>
+          <td class="num2">10,11%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_estado_do_Rio_de_Janeiro.svg.webp" alt=""> Rio De Janeiro</td>
+          <td class="num">16 054 524	</td>
+          <td class="num2">7,91%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_da_Bahia.svg.webp" alt=""> Bahia</td>
+          <td class="num">14 141 626</td>
+          <td class="num2">6,96%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Paraná.svg.webp" alt=""> Paraná</td>
+          <td class="num">11 444 380</td>
+          <td class="num2">5,64%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Rio_Grande_do_Sul.svg.webp" alt=""> Rio Grande Do Sul</td>
+          <td class="num">10 882 965	</td>
+          <td class="num2">5,36%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_de_Pernambuco.svg.webp" alt=""> Pernambuco</td>
+          <td class="num">9 058 931</td>
+          <td class="num2">4,46%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Ceará.svg.webp" alt=""> Ceará</td>
+          <td class="num">8 794 957</td>
+          <td class="num2">4,33%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Pará.svg.png" alt=""> Pará</td>
+          <td class="num">8 121 025</td>
+          <td class="num2">4,1%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_de_Santa_Catarina.svg.webp" alt=""> Santa Catarina</td>
+          <td class="num">7 610 361	</td>
+          <td class="num2">3,75%</td>
+        </tr>
+        <tr>
+          <td><img src="Flag_of_Goiás.svg.webp" alt=""> Goiás</td>
+          <td class="num">7 056 495</td>
+          <td class="num2">3,47%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Maranhão.svg.webp" alt=""> Maranhão</td>
+          <td class="num">6 775 805</td>
+          <td class="num2">3,34%</td>
+        </tr>
+        <tr>
+          <td><img src="20px-Bandeira_da_Paraíba.svg.webp" alt=""> Paraíba</td>
+          <td class="num">3 974 687	</td>
+          <td class="num2">1,96%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Amazonas.svg.webp" alt=""> Amazonas</td>
+          <td class="num">3 941 613</td>
+          <td class="num2">1,94%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Espírito_Santo.svg.webp" alt=""> Espírito Santo</td>
+          <td class="num">3 833 712</td>
+          <td class="num2">1,89%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_de_Mato_Grosso.svg.webp" alt=""> Mato Grosso</td>
+          <td class="num">3 658 649	</td>
+          <td class="num2">1,8%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Rio_Grande_do_Norte.svg.webp" alt=""> Rio Grande Do Norte</td>
+          <td class="num">3 302 729</td>
+          <td class="num2">1,63%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Piauí.svg.png" alt=""> Piauí</td>
+          <td class="num">3 271 199</td>
+          <td class="num2">1,61%</td>
+        </tr>
+        <tr>
+          <td><img src="20px-Bandeira_de_Alagoas.svg (1).webp" alt=""> Alagoas</td>
+          <td class="num">3 127 683</td>
+          <td class="num2">1,54%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Distrito_Federal_(Brasil).svg.webp" alt=""> Distrito Federal</td>
+          <td class="num">2 817 381</td>
+          <td class="num2">1,39%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_de_Mato_Grosso_do_Sul.svg.webp" alt=""> Mato Grosso Do Sul</td>
+          <td class="num">2 757 013</td>
+          <td class="num2">1,36%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_de_Sergipe.svg.webp" alt=""> Sergipe</td>
+          <td class="num">2 209 558</td>
+          <td class="num2">1,09%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_de_Rondônia.svg.webp" alt=""> Rondônia</td>
+          <td class="num">1 581 196</td>
+          <td class="num2">0,78%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Tocantins.svg.webp" alt=""> Tocantins</td>
+          <td class="num">1 511 460</td>
+          <td class="num2">0,74%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Acre.svg.webp" alt=""> Acre</td>
+          <td class="num">830 018</td>
+          <td class="num2">0,41%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_do_Amapá.svg.webp" alt=""> Amapá</td>
+          <td class="num">733 759</td>
+          <td class="num2">0,36%</td>
+        </tr>
+        <tr>
+          <td><img src="Bandeira_de_Roraima.svg.webp" alt=""> Roraima</td>
+          <td class="num">636 707</td>
+          <td class="num2">0,31%</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Total de habitantes</th>
+            <td><strong>203 062 512</strong></td>
+            <td><strong>+6,45%</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium dolor minima quis harum debitis. Tempora ab commodi neque, vitae alias fuga perspiciatis ipsum culpa eius harum ullam placeat! Eligendi, cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ab, itaque sapiente recusandae quis aliquam consectetur quae eos amet veritatis magni quidem, velit reprehenderit quia. Assumenda recusandae odio iure numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam blanditiis doloribus soluta fuga quidem, sed vitae, facilis, laudantium quibusdam deserunt saepe ipsa accusantium quae asperiores quam id harum dolorum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum veritatis nesciunt, odio suscipit porro eaque! Culpa, ab atque. Quos iusto sunt vero porro nihil? Animi eius corporis quasi esse totam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium fugit, numquam, vero, saepe beatae optio odio tenetur tempore consequatur ullam provident dolorum. In reprehenderit corporis aliquam architecto fuga dignissimos laboriosam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium dolor minima quis harum debitis. Tempora ab commodi neque, vitae alias fuga perspiciatis ipsum culpa eius harum ullam placeat! Eligendi, cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ab, itaque sapiente recusandae quis aliquam consectetur quae eos amet veritatis magni quidem, velit reprehenderit quia. Assumenda recusandae odio iure numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam blanditiis doloribus soluta fuga quidem, sed vitae, facilis, laudantium quibusdam deserunt saepe ipsa accusantium quae asperiores quam id harum dolorum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum veritatis nesciunt, odio suscipit porro eaque! Culpa, ab atque. Quos iusto sunt vero porro nihil? Animi eius corporis quasi esse totam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium fugit, numquam, vero, saepe beatae optio odio tenetur tempore consequatur ullam provident dolorum. In reprehenderit corporis aliquam architecto fuga dignissimos laboriosam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium dolor minima quis harum debitis. Tempora ab commodi neque, vitae alias fuga perspiciatis ipsum culpa eius harum ullam placeat! Eligendi, cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ab, itaque sapiente recusandae quis aliquam consectetur quae eos amet veritatis magni quidem, velit reprehenderit quia. Assumenda recusandae odio iure numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam blanditiis doloribus soluta fuga quidem, sed vitae, facilis, laudantium quibusdam deserunt saepe ipsa accusantium quae asperiores quam id harum dolorum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum veritatis nesciunt, odio suscipit porro eaque! Culpa, ab atque. Quos iusto sunt vero porro nihil? Animi eius corporis quasi esse totam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium fugit, numquam, vero, saepe beatae optio odio tenetur tempore consequatur ullam provident dolorum. In reprehenderit corporis aliquam architecto fuga dignissimos laboriosam!</p>
+      
+</body>
+</html>

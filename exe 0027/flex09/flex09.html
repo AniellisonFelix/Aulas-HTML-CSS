@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container {
+			background-color: lightcoral;
+			display: flex;
+			flex-flow: row wrap;
+		}
+
+		.item {
+			background-color: lightblue;
+			border: 1px solid black;
+			text-align: center;
+			flex-basis: 150px; /*exemplo de flex-basis: ;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item">A</div>
+		<div class="item">B</div>
+		<div class="item">C</div>
+		<div class="item">D</div>
+		<div class="item">E</div>
+		<div class="item">F</div>
+		<div class="item">G</div>
+	</div>
+</body>
+</html>
+
+<!-- flex-shrink: 1 por padrao pode encolher
+	fex-shrink: 0; nao vai encolher os itens assim fazendoa tela engolir os itens sem que eles percam o tamanho
+flex-grow: 0 por padrao nao pode crescer 
+flex-grow: 1 pode crescer
+se quiser que todos os itens virem elasticos de acordo com a tela basta colocar flex-shrink: 1; flex-grow: 1;-->

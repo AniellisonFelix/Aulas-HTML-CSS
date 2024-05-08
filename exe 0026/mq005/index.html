@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media query</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+  <h1>Meu site</h1>
+  <span id="menu1" class="material-symbols-outlined" onclick="clickMenu()">
+    list
+    </span>
+  <header>
+    <menu id="itens">
+      <ul>
+        <li><a href="#">Opção 1</a></li>
+        <li><a href="#">Opção 2</a></li>
+        <li><a href="#">Opção 3</a></li>
+        <li><a href="#">Opção 4</a></li>
+        <li><a href="#">Opção 5</a></li>
+      </ul>
+    </menu>
+  </header>
+  <main>
+    <article>
+      <h2>Testando media queries</h2>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eos, aperiam eum quo veritatis nulla, distinctio minus enim sequi cupiditate vero? Fugit adipisci quaerat ad excepturi. Aut quis magnam mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus accusamus possimus quaerat rem saepe harum eligendi rerum sunt beatae. Sapiente cupiditate pariatur laudantium ullam adipisci facilis magnam velit sit.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dicta et ullam at ducimus quo quam voluptates consectetur vero a vel optio, eveniet itaque? Officiis harum porro velit voluptatibus perferendis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis voluptatem, placeat in sapiente, sint numquam odio sequi voluptate consequuntur quisquam repellat error odit voluptatibus ad! Nulla possimus iusto aspernatur necessitatibus.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae eaque, totam necessitatibus iste optio aliquam earum quas laudantium blanditiis mollitia voluptates odio quasi. Quae quisquam deserunt nisi est similique rem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores doloribus ea officiis, placeat nemo fuga. Est, dolorum consequatur. Laborum rerum architecto quam similique! Fugit laboriosam in provident soluta doloribus corporis!
+      </p>
+    </article>
+  </main>
+  <script>
+
+    function mudouTamanho() {
+      if (window.innerWidth >= 768) {
+        itens.style.display = 'block'
+      } else {
+        itens.style.display = 'none'
+      }
+      }
+
+    function clickMenu() {
+      if (itens.style.display == 'block') {
+        itens.style.display = 'none'
+      } else {
+        itens.style.display = 'block'
+      }
+        
+    }
+  </script>
+</body>
+</html>

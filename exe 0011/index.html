@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>midias em html</title>
+</head>
+<body>
+  <h1>imagem dinamicas</h1>
+  <p>Tente abrir esse site em varios sites diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+  <picture>
+    <source media="(max-width: 750px)" srcset="imagens/títuloP.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/títuloM" type="image/png">
+      <img src="imagens/títuloG.png" alt="imagem flexivel">
+  </picture>
+  <h1>reproduzindo audio</h1>
+  <p>Vamos aprender a reproduzir audios em html</p><audio src="midia/Rock.mp3"controls autoplay></audio>
+  <audio preload="metadata" autoplay controls loop>
+     <source src="midia/Rock.mp3" type="audio/mpeg">
+     <source src="midia/Rock.mp3" type="audio/ogg">
+     <!--<p>inf siga o link (CTRL + clique) se nao consegue reproduzir audio. <ahref="midia/Rock.mp3">Clique aqui para baixar o arquivo</ahref></p> -->
+
+
+  </audio>
+</body>
+</html>
